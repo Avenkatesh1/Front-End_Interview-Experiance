@@ -1,11 +1,7 @@
 import { Component, HostListener, OnInit, inject } from '@angular/core';
 import { InterviewService } from '../../Service/interview.service';
 import { APIResponsModel, ILanguage, LanguageTopic, Question } from '../../model/language/language.module';
-import { CommonModule } from '@angular/common';
 import { Observable, map, tap } from 'rxjs';
-import { FormsModule } from '@angular/forms';
-import { QuestionCardComponent } from '../question-card/question-card.component';
-import { QuestionCountComponent } from '../question-count/question-count.component';
 import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
@@ -13,7 +9,7 @@ import { DomSanitizer } from '@angular/platform-browser';
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
    
   languageList: ILanguage[] = [];
   service = inject(InterviewService);
