@@ -9,13 +9,19 @@ import { QuestionCardComponent } from './pages/question-card/question-card.compo
 import { QuestionCountComponent } from './pages/question-count/question-count.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ContactComponent } from './Component/contact/contact.component';
+import { CategoryComponent } from './Component/category/category.component';
+import { PortfolioComponent } from './Component/portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     QuestionCardComponent,
-    QuestionCountComponent
+    QuestionCountComponent,
+    ContactComponent,
+    CategoryComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
